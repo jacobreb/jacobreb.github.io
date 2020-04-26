@@ -21,7 +21,12 @@ You can open this html file using your browser. If you make a change to this or 
 <!--
 Enter your name here, this is what appears in the tab label on a browser.
  -->
-<title>Glitch Reading</title>
+<title>Glitch Reading</title
+ <script
+			  src="https://code.jquery.com/jquery-3.5.0.js"
+			  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+			  crossorigin="anonymous"></script>
+ <script src="mgGlitch.min.js"></script>
 </head>
 
 <body>
@@ -58,6 +63,10 @@ Replace "Work Title [Journal]" with whatever you like.
 
 The <br> is a line brake. This makes sure each link is on a new line.
  -->
+ <div class="container">
+  <div class="glitch=img" style= "background-image: url('https://66.media.tumblr.com/1c0fda07ea85b87e67787fe1c6bfd3d7/tumblr_orhsw8cJry1t0xvkto1_540.jpg')">
+
+       </div>
 
 <h3>full-length</h3>
 <h4>2019</h4>
@@ -104,5 +113,20 @@ function replaceText(elem, newText) {
     elem.className="courier";
 }
   </script>
+ <script type="text/javascript">
+$function (){
+ $(".glitch-img").mgGlitch{
+  destroy: false,
+  glitch: true,
+  scale: false,
+  blend: true,
+  blendModeType: 'hue',
+  glitch1TimeMin: 500,
+  glitch1TimeMax: 100,
+  glitch2TimeMin: 100,
+  glitch2TimeMax: 200,
+ });
+});
+ </script>
 </body>
 </html>
