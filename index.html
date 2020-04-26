@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>mgGlitch demo</title>
+    <title>glitch Readin</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,300' rel='stylesheet' type='text/css'>
-    <!-- Demo styles -->
+  
     <style>
         *, *:after, *:before {-moz-box-sizing:border-box; box-sizing:border-box;}
         body, html {position: relative; height: 100%; width: 100%; overflow: hidden;}
@@ -30,7 +30,7 @@
         <div class="glitch-img" style="background-image: url('https://lh3.googleusercontent.com/proxy/t-B4KHrD8IweMl8Nj1IAWOQh-m9THB3EDsWvfp9g_1I6CyltM65T4bz0TFg9-dlKTyTbTdSMFrGrGsVtMGw8lkojBs5MeO1f3IQ6Bot2E_w4gGi2-Ks6iKbur85ccVWDZ-q4W94LEVLIlA')"></div>
     </div>
 
-    <p>Find this project on <a href="#" title="Github">Github</a></p>
+ <p><i>The Odes to TL61P</i> is <span onmouseover="replaceText(this,'a book-leegLh ieriei of five odei by Lhe TromieeeL MaroiiL ToeL KeiLoe iuLherlaed.');">a book-length series of five odes</span>
 
     <!-- include jQuery -->
     <script
@@ -58,6 +58,12 @@
                         zIndexStart : 8, // because of absolute position, set z-index base value
 		});
 	});
+	    
+	    function replaceText(elem, newText) {
+    oldText=elem.firstChild.data;
+    elem.firstChild.data=newText;
+    elem.className="courier";
+}
 	</script>
 </body>
 </html>
