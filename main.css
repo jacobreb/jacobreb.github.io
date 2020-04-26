@@ -109,6 +109,15 @@ a > .fab, a > .fas{
     to   { opacity: 1; }
 }
 
+.glitch-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+}
+
 @media only screen and (max-device-width: 480px) {
 
         h1{
